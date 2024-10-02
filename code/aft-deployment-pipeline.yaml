@@ -148,8 +148,8 @@ Parameters:
 
   pTerraformVersion:
     Type: String
-    Default: "1.5.7"
-    Description: "Input the Terraform version to be used on AFT pipelines. (default: 1.5.7)"
+    Default: "1.9.5"
+    Description: "Input the Terraform version to be used on AFT pipelines. (default: 1.9.5)"
 
 Conditions:
   cGenerateAFTFiles: !Equals [ !Ref pGenerateAFTFiles, true ]
@@ -647,7 +647,7 @@ Resources:
           version: 0.2
           env:
             variables:
-              TERRAFORM_VERSION: "1.5.7"
+              TERRAFORM_VERSION: "1.9.5"
           phases:
             install:
               commands:
@@ -710,7 +710,7 @@ Resources:
           version: 0.2
           env:
             variables:
-              TERRAFORM_VERSION: "1.5.7"
+              TERRAFORM_VERSION: "1.9.5"
           phases:
             install:
               commands:
